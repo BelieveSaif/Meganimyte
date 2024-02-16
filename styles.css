@@ -1,0 +1,325 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Set your desired background color */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure that the body fills the entire viewport */
+}
+
+/* Header styles */
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none; /* Optional: Remove underline */
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.logo sup {
+    font-size: 12px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Set your desired hover color */
+}
+
+.exclusive-button {
+    background-color: #ffcc00; /* Set your desired button background color */
+    color: black; /* Set your desired button text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.exclusive-button:hover {
+    background-color: black; /* Set your desired hover background color */
+    color: white; /* Set your desired hover text color */
+}
+
+/* Main content wrapper to push footer to the bottom */
+.main-content {
+    flex: 1;
+}
+
+/* Body Section styles */
+.body-section {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: calc(100vh - 120px); /* Subtract header height and footer height */
+    background: linear-gradient(45deg, #001f3f, #001f3f 40%, #0074cc 60%, #0074cc); /* Set your desired metallic blue gradient */
+    color: white; /* Set text color to white or lighter color for better contrast */
+    padding: 20px; /* Add padding as needed */
+}
+
+.launching-soon {
+    text-align: center;
+}
+
+.launching-soon h2 {
+    font-size: 36px;
+    color: black; /* Set your desired color */
+}
+
+/* Footer styles */
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Custom Footer Styles */
+footer {
+    text-align: center;
+}
+
+.footer-container {
+    background-color: #95AAB6;
+    display: flex;
+}
+
+.footer-container a {
+    color: #F5F6F7;
+    padding: 42px 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.footer-left {
+    margin-right: auto;
+}
+
+.fa:hover {
+    color: #45405F;
+}
+
+.footer-icons {
+    justify-content: space-between;
+    padding: 16px 64px 0px 0px;
+}
+
+.footer-icons ul {
+    list-style-type: none;
+}
+
+.footer-icons li {
+    display: inline-block;
+}
+
+.footer-right {
+    margin-left: auto;
+}
+
+.copyright {
+    background-color: #06090b;
+    overflow: hidden;
+}
+
+/* Copyright and Credits Styles */
+.copyright {
+    background-color: #000; /* Black background color */
+    color: #fff; /* White text color */
+    overflow: hidden;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition for hover effect */
+}
+
+.copyright:hover {
+    background-color: #ffcc00; /* Yellow background color on hover */
+    color: #000; /* Black text color on hover */
+}
+
+.copyright p {
+    margin: 5px 0;
+}
+
+
+/* Subscription Form Styles */
+.subscribe input[type="email"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.subscribe button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffcc00; /* Set your desired button background color */
+    color: black; /* Set your desired button text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.subscribe button:hover {
+    background-color: black; /* Set your desired hover background color */
+    color: white; /* Set your desired hover text color */
+}
+
+/* Social Media Icons Styles */
+.social-media {
+    font-size: 24px;
+}
+
+.social-media a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #ffcc00; /* Set your desired hover color */
+}
+
+/* Adjusting social media icons alignment */
+.social-media {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.social-media a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.social-media a:last-child {
+    margin-right: 0; /* Remove margin-right for the last child */
+}
+
+.social-media a:hover {
+    color: #ffcc00; /* Set your desired hover color */
+}
+
+/* Popup Container Styles */
+.popup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+/* Popup Message Styles */
+.popup-message {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* 404 Error Page Styles */
+.error-404 {
+    text-align: center;
+    padding: 50px;
+}
+
+.error-404 h1 {
+    font-size: 36px;
+    color: red;
+}
+
+.error-404 p {
+    font-size: 18px;
+    color: #555;
+}
+
+.error-404 a {
+    color: blue;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.error-404 a:hover {
+    color: darkblue;
+}
+
+/* Contact Us Page Styles */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: black;
+    color: white;
+}
