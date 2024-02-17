@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meganimyte</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        // Function to display alert message and redirect if "I Agree" is not clicked
+        window.onload = function() {
+            var agreed = confirm("مرحبًا بك في Meganimyte!\n\nيرجى ملاحظة أن موقعنا على الويب قيد التحديث باستمرار لتقديم أفضل تجربة للمستخدم. بالنقر على 'موافق'، فإنك توافق على المتابعة.");
+            if (!agreed) {
+                window.location.replace("404.html"); // Redirect to Error 404 page
+            }
+        };
+
+        // JavaScript function for language change
+        function changeLanguage() {
+            var selectedLanguage = document.getElementById("languageSelect").value;
+            if (selectedLanguage === "en") {
+                window.location.href = "index.html";
+            } else if (selectedLanguage === "es") {
+                window.location.href = "spanish_index.html";
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <!-- Logo and Navigation Menu -->
+        <div class="logo">
+            <h1><a href="arabic_index.html">Meganimyte<sup>&reg;</sup></a></h1>
+        </div>
+        <!-- Language Selector in the Header -->
+        <select id="languageSelect" onchange="changeLanguage()">
+            <option value="ar">العربية</option>
+            <option value="en">English</option>
+            <option value="es">Español</option>
+        </select>
+        <nav>
+            <ul>
+                <li><a href="arabic_movies.html">الأفلام</a></li>
+                <li><a href="arabic_shortfilms.html">الأفلام القصيرة</a></li>
+                <li><a href="arabic_series.html">السلاسل</a></li>
+                <li><a href="arabic_tv_commercials.html">الإعلانات التلفزيونية</a></li>
+                <li><a href="arabic_careers.html">الوظائف</a></li>
+                <li><a href="arabic_about_us.html">معلومات عنا</a></li>
+                <li><a href="arabic_contact_us.html">اتصل بنا</a></li>
+                <li><a href="https://youtube.com" class="exclusive-button" target="_blank">مشاهدة الآن</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+        <!-- Body Section -->
+        <section class="body-section">
+            <div class="launching-soon">
+                <h2>قريباً...</h2>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="subscribe">
+            <input type="email" placeholder="أدخل بريدك الإلكتروني">
+            <button>الاشتراك</button>
+        </div>
+        <div class="social-media">
+            <a class="social-button facebook" href="https://www.facebook.com/Meganimyte" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a class="social-button twitter" href="https://www.twitter.com/Meganimyte" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a class="social-button linkedin" href="https://www.linkedin.com/company/meganimyte" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a class="social-button tiktok" href="https://www.tiktok.com/@Meganimyte" target="_blank"><i class="fa fa-tiktok"></i></a>
+            <a class="social-button snapchat" href="https://www.snapchat.com/Meganimyte" target="_blank"><i class="fa fa-snapchat"></i></a>
+            <a class="social-button youtube" href="https://www.youtube.com/c/Meganimyte" target="_blank"><i class="fa fa-youtube"></i></a>
+            <a class="social-button instagram" href="https://www.instagram.com/Meganimyte" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+        <div class="copyright">
+            <p>&copy; Meganimyte 2024. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+</body>
+</html>
