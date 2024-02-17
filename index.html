@@ -14,9 +14,28 @@
                 window.location.replace("404.html"); // Redirect to Error 404 page
             }
         };
+
+        // JavaScript function for language change
+        function changeLanguage() {
+            var selectedLanguage = document.getElementById("languageSelect").value;
+            if (selectedLanguage === "ar") {
+                window.location.href = "arabic_index.html";
+            } else if (selectedLanguage === "es") {
+                window.location.href = "spanish_index.html";
+            } else {
+                window.location.href = "index.html"; // Default to English
+            }
+        }
     </script>
 </head>
 <body>
+    <!-- Language Selector -->
+    <select id="languageSelect" onchange="changeLanguage()">
+        <option value="en">English</option>
+        <option value="ar">العربية</option>
+        <option value="es">Español</option>
+    </select>
+
     <!-- Header Section -->
     <header>
         <!-- Logo and Navigation Menu -->
